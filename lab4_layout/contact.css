@@ -1,0 +1,178 @@
+
+/* ===== HALAMAN CONTACT ===== */
+
+.contact-content {
+    padding: 30px;
+    background-color: #ffffff;
+    color: #444444;
+    min-height: 400px;
+    line-height: 1.7;
+}
+
+.contact-content h2 {
+    font-size: 30px;
+    color: #333333;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.contact-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+/* Formulir */
+.contact-form {
+    max-width: 650px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2765a5;
+    box-shadow: 0 0 4px rgba(39, 101, 165, 0.3);
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Tombol */
+.btn-submit {
+    padding: 12px 25px;
+    background-color: #2765a5;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #174878;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    .contact-content {
+        padding: 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+
+/* ===== LAYOUT UTAMA ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+}
+
+#container {
+    width: 90%;
+    max-width: 1260px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+    padding: 45px 40px;
+    background: #fff;
+}
+
+#header h1 {
+    margin: 0;
+    color: #aaa;
+    font-size: 40px;
+}
+
+/* Navigasi biru */
+#menu {
+    background: #2765a5;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li a {
+    display: block;
+    padding: 20px 35px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu ul li a:hover,
+#menu ul li a.active {
+    background: #3188e8;
+}
+
+/* Footer */
+#footer {
+    padding: 15px;
+    background: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Tampilan layar kecil */
+@media (max-width: 600px) {
+    #container {
+        width: 100%;
+    }
+
+    #header {
+        padding: 25px 20px;
+    }
+
+    #header h1 {
+        font-size: 30px;
+    }
+
+    #menu ul {
+        flex-wrap: wrap;
+    }
+
+    #menu ul li a {
+        padding: 15px;
+    }
+}

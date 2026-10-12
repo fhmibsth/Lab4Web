@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Layout Sederhana</title>
+    <link rel="stylesheet" href="about.css">
+
+    <style>
+        .about-content {
+            padding: 30px;
+            background: #fff;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .about-content h2 {
+            color: #333;
+            font-size: 30px;
+        }
+
+        .about-content h3 {
+            color: #2765a5;
+            margin-top: 25px;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .portfolio-item {
+            flex: 1 1 200px;
+            padding: 20px;
+            background: #f1f1f1;
+            border-radius: 5px;
+        }
+
+        .portfolio-item h4 {
+            color: #2765a5;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <header id="header">
+            <h1>Layout Sederhana</h1>
+        </header>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <main class="about-content">
+            <h2>About Me</h2>
+
+            <p>
+                Selamat datang di halaman About.
+                Halaman ini berisi informasi singkat tentang diri saya,
+                deskripsi, keahlian, dan portfolio.
+            </p>
+
+            <h3>Deskripsi Diri</h3>
+
+            <p>
+                Saya adalah seorang mahasiswa yang sedang mempelajari
+                pengembangan website menggunakan HTML dan CSS.
+                Saya tertarik mempelajari teknologi informasi,
+                desain web, dan pemrograman.
+            </p>
+
+            <h3>Keahlian</h3>
+
+            <ul>
+                <li>HTML untuk membuat struktur halaman web.</li>
+                <li>CSS untuk mengatur tampilan website.</li>
+                <li>Desain layout website sederhana.</li>
+            </ul>
+
+            <h3>Portfolio</h3>
+
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <h4>Project 1</h4>
+                    <p>Membuat halaman website menggunakan HTML.</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <h4>Project 2</h4>
+                    <p>Mengatur layout website menggunakan CSS.</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <h4>Project 3</h4>
+                    <p>Membuat navigasi dan halaman website.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <p>&copy; 2026 - Layout Sederhana</p>
+        </footer>
+
+    </div>
+</body>
+</html>

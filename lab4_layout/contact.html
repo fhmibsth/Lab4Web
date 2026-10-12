@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Layout Sederhana</title>
+    <link rel="stylesheet" href="contact.css">
+
+    <style>
+        .contact-content {
+            padding: 30px;
+            background: #fff;
+            color: #444;
+        }
+
+        .contact-content h2 {
+            color: #333;
+            font-size: 30px;
+        }
+
+        .contact-form {
+            max-width: 650px;
+            margin-top: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .btn-submit {
+            padding: 12px 25px;
+            background: #2765a5;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .btn-submit:hover {
+            background: #174878;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <header id="header">
+            <h1>Layout Sederhana</h1>
+        </header>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <main class="contact-content">
+            <h2>Hubungi Kami</h2>
+
+            <p>
+                Silakan isi formulir di bawah ini jika ingin
+                mengirimkan pertanyaan, saran, atau pesan.
+            </p>
+
+            <form class="contact-form" action="#" method="post">
+
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama"
+                           placeholder="Masukkan nama lengkap" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Masukkan alamat email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subjek">Subjek</label>
+                    <input type="text" id="subjek" name="subjek"
+                           placeholder="Masukkan subjek pesan" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan"
+                              placeholder="Tuliskan pesan Anda"
+                              required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    Kirim Pesan
+                </button>
+
+            </form>
+        </main>
+
+        <footer id="footer">
+            <p>&copy; 2026 - Layout Sederhana</p>
+        </footer>
+
+    </div>
+
+</main>
+
+</body>
+</html>
